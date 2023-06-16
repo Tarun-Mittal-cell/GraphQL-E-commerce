@@ -3,7 +3,7 @@ const { buildSchema } = require('graphql');
 const { graphqlHTTP } = require('express-graphql');
 
 const schema = buildSchema(`
-  type Query {
+    type Query {
         products: [Product]
         orders: [Order]
     }
@@ -48,7 +48,7 @@ const root = {
     orders: [
         {
             date: '2005-05-05',
-            subtotal: 90.22,
+            subTotal: 90.22,
             items: [
                 {
                     product: {
